@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Personal Site</title>
+  <meta name="description" content="Personal website of Your Name — projects, blog, and contact." />
+  <meta property="og:title" content="Your Name — Personal Site" />
+  <meta property="og:description" content="Projects, notes, and ways to reach me." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="logo">◎</span> <span class="brand-text">#Entertainment Hub</span></a>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi, I’m Sanal Paulose.</h1>
+        <p class="lead">I build things on the web. This is my tiny corner of the internet where I share <strong>projects</strong>, <strong>notes</strong>, and experiments.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+      <img class="hero-photo" src="https://placehold.co/320x320/png" alt="Your portrait placeholder" />
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short sentence about what this project does and why it’s interesting.</p>
+          <a class="card-link" href="#" target="_blank" rel="noopener">Live Demo</a>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Another brief description. Replace with your own work as you build.</p>
+          <a class="card-link" href="#" target="_blank" rel="noopener">Source Code</a>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Keep each card concise. You can add more later or turn this into a blog.</p>
+          <a class="card-link" href="#" target="_blank" rel="noopener">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Write a few lines about yourself: what you’re learning, what you like to build, and what you’re exploring next.</p>
+      <ul class="bullets">
+        <li>✅ Areas of interest: Music, Finance, Algo, Trading, data viz</li>
+        <li>📍 Location: Kozhikode, Kerala</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Feel free to reach me on:-</p>
+      <form action="https://formspree.io/f/xvgbekkz" method="POST" class="contact-form">
+    <label>
+      Name:
+      <input type="text" name="name" required>
+    </label><br><br>
+
+    <label>
+      Contact Number:
+      <input type="tel" name="contact" required>
+    </label><br><br>
+
+    <label>
+      Subject:
+      <input type="text" name="subject" required>
+    </label><br><br>
+
+    <label>
+      Query:
+      <textarea name="message" required></textarea>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+      <ul class="links">
+        <li>
+          Email: <a href="mailto:sanalpaulose17@gmail.com">sanalpaulose17@gmail.com</a>
+        </li>
+        <li>
+          LinkedIn: <a href="https://www.linkedin.com/in/sanal-paulose" target="_blank" rel="noopener">https://www.linkedin.com/in/sanal-paulose
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name. Built with plain HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
